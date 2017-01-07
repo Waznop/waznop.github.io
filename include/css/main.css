@@ -33,7 +33,7 @@ body{
 }
 
 
-a{
+a, a h4{
 	color:#DE5E60;
 	text-decoration: none;
 	cursor: pointer;
@@ -42,6 +42,14 @@ a{
 	   -moz-transition: color 0.1s linear 0s;
 		 -o-transition: color 0.1s linear 0s;
 		    transition: color 0.1s linear 0s;
+}
+
+a h4:hover,
+a h4:active,
+a h4:focus{
+	outline: 0;
+	color:#FFFFFF;
+	text-decoration:none;
 }
 
 a:hover,
@@ -330,8 +338,9 @@ h3.spec {
 	margin: 100px 0 0 0;
 	font-size: 36px;
 	color: #FFFFFF;
+	opacity: 0.4;
 	letter-spacing: -2px;
-	/* text-transform: uppercase; */
+	text-transform: uppercase;
 }
 
 #home-slider .control-nav {

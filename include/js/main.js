@@ -77,9 +77,9 @@ BRUSHED.slider = function(){
 		thumb_links				:	0,			// Individual thumb links for each slide
 		thumbnail_navigation    :   0,			// Thumbnail navigation
 		slides 					:  	[			// Slideshow Images
-											{image : 'include/img/slider-images/image01.jpg', title : '<div class="slide-content">Hong Tai Wei</div>', thumb : '', url : ''},
-											{image : 'include/img/slider-images/image02.jpg', title : '<div class="slide-content">Hong Tai Wei</div>', thumb : '', url : ''},
-											{image : 'include/img/slider-images/image03.jpg', title : '<div class="slide-content">Hong Tai Wei</div>', thumb : '', url : ''}
+											{image : 'include/img/slider-images/image01.jpg', title : '<div class="slide-content">Developer</div>', thumb : '', url : ''},
+											{image : 'include/img/slider-images/image02.jpg', title : '<div class="slide-content">Composer</div>', thumb : '', url : ''},
+											{image : 'include/img/slider-images/image03.jpg', title : '<div class="slide-content">Athlete</div>', thumb : '', url : ''}
 									],
 									
 		// Theme Options			   
@@ -165,7 +165,10 @@ BRUSHED.fancyBox = function(){
 				beforeShow: function () {
 					var img = $(this.element).parent().find('img');
 					this.title = $(this.element).attr('title');
-					this.title = '<a href=\"' + img.attr('link') + '\" target=\"_blank\"><h4>' + this.title + '</h4></a>' +
+					this.title = 
+						'<a href=\"' + img.attr('link') + '\" target=\"_blank\">' +
+							'<h4>' + this.title + '</h4>' +
+						'</a>' +
 						'<p>' + img.attr('alt') + '</p>';
 				},
 				helpers : {

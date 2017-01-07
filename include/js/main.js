@@ -163,8 +163,10 @@ BRUSHED.fancyBox = function(){
 		$(".fancybox").fancybox({				
 				padding : 0,
 				beforeShow: function () {
+					var img = $(this.element).parent().find('img');
 					this.title = $(this.element).attr('title');
-					this.title = '<h4>' + this.title + '</h4>' + '<p>' + $(this.element).parent().find('img').attr('alt') + '</p>';
+					this.title = '<a href=\"' + img.attr('link') + '\" target=\"_blank\"><h4>' + this.title + '</h4></a>' +
+						'<p>' + img.attr('alt') + '</p>';
 				},
 				helpers : {
 					title : { type: 'inside' },
@@ -406,6 +408,7 @@ $(document).ready(function(){
 		test: Modernizr.placeholder,
 		nope: 'include/js/placeholder.js', 
 		complete : function() {
+			/*
 				if (!Modernizr.placeholder) {
 						Placeholders.init({
 						live: true,
@@ -414,6 +417,7 @@ $(document).ready(function(){
 						textColor: "#999"
 						});    
 				}
+			*/
 		}
 	}
 	]);

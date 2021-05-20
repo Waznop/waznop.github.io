@@ -49,8 +49,8 @@ BRUSHED.listenerMenu = function(){
 BRUSHED.slider = function(){
 	$.supersized({
 		// Functionality
-		slideshow               :   1,			// Slideshow on/off
-		autoplay				:	1,			// Slideshow starts playing automatically
+		slideshow               :   0,			// Slideshow on/off
+		autoplay				:	0,			// Slideshow starts playing automatically
 		start_slide             :   1,			// Start slide (0 is random)
 		stop_loop				:	0,			// Pauses slideshow on last slide
 		random					: 	0,			// Randomize slide order (Ignores start slide)
@@ -59,7 +59,7 @@ BRUSHED.slider = function(){
 		transition_speed		:	300,		// Speed of transition
 		new_window				:	1,			// Image links open in new window/tab
 		pause_hover             :   0,			// Pause slideshow on hover
-		keyboard_nav            :   1,			// Keyboard navigation on/off
+		keyboard_nav            :   0,			// Keyboard navigation on/off
 		performance				:	1,			// 0-Normal, 1-Hybrid speed/quality, 2-Optimizes image quality, 3-Optimizes transition speed // (Only works for Firefox/IE, not Webkit)
 		image_protect			:	1,			// Disables image dragging and right click with Javascript
 												   
@@ -77,9 +77,7 @@ BRUSHED.slider = function(){
 		thumb_links				:	0,			// Individual thumb links for each slide
 		thumbnail_navigation    :   0,			// Thumbnail navigation
 		slides 					:  	[			// Slideshow Images
-											{image : 'include/img/slider-images/image01.jpg', title : '<div class="slide-content">Developer</div>', thumb : '', url : ''},
-											{image : 'include/img/slider-images/image02.jpg', title : '<div class="slide-content">Composer</div>', thumb : '', url : ''},
-											{image : 'include/img/slider-images/image03.jpg', title : '<div class="slide-content">Athlete</div>', thumb : '', url : ''}
+											{image : 'include/img/slider-images/DSC02019.jpg', title : '<div class="slide-content"></div>', thumb : '', url : ''},
 									],
 									
 		// Theme Options			   

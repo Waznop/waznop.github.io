@@ -77,7 +77,7 @@ BRUSHED.slider = function(){
         thumb_links             :   0,          // Individual thumb links for each slide
         thumbnail_navigation    :   0,          // Thumbnail navigation
         slides                  :   [           // Slideshow Images
-                                            {image : 'include/img/slider-images/DSC02019.jpg', title : '<div class="slide-content"></div>', thumb : '', url : ''},
+                                            {image : 'include/img/slider-images/51-DSC07489.jpg', title : '<div class="slide-content"></div>', thumb : '', url : ''},
                                     ],
                                     
         // Theme Options               
